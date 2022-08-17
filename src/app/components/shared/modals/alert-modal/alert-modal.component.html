@@ -1,0 +1,14 @@
+<div class="modal-body text-center">
+  <p>
+    <ion-icon name="alert-circle" *ngIf="alertType === 'error'" size="large" class="text-danger"></ion-icon>
+    <ion-icon name="alert-circle" *ngIf="alertType === 'warning'" size="large" class="text-warning"></ion-icon>
+    <ion-icon name="checkmark-circle" *ngIf="alertType === 'success'" size="large"  class="text-success"></ion-icon>
+    <ion-icon name="information-circle" *ngIf="alertType === 'info'" size="large" class="text-info"></ion-icon>
+  </p>
+  
+  <p>{{message}}</p>
+</div>
+
+<div class="modal-footer d-flex align-items-center justify-content-center">
+  <button type="button" class="btn btn-primary" (click)="close()">OK</button>
+</div>

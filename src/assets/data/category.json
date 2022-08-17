@@ -1,0 +1,512 @@
+[
+  {
+      "BUID": "000000051",
+      "Name": "LAUNDRY",
+      "ID": "000000100"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "FABRIC ENHANCER CAT",
+      "ID": "000000101"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "LAUNDRY ADDITIVE CAT",
+      "ID": "000000102"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "BLEACH ID",
+      "ID": "000000368"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "PROFNL FABRIC CARE CAT",
+      "ID": "000005232"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "MISC FABRIC CARE CAT",
+      "ID": "000009730"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "DRY CLEANERS FRANCHISE",
+      "ID": "000000184"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "FABRIC REVITALIZER CAT",
+      "ID": "000000366"
+  },
+  {
+      "BUID": "000000051",
+      "Name": "WASH & FOLD SERVICES CAT",
+      "ID": "000000187"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "HAND DISH ID",
+      "ID": "000000103"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "CLEANING PRODUCTS CAT",
+      "ID": "000000104"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "PROFNL DISH CARE CAT",
+      "ID": "000000375"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "AIR CARE ID",
+      "ID": "000004512"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "MISC HOME CARE ID",
+      "ID": "000009765"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "PROFNL SURFACE CARE CAT",
+      "ID": "000009923"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "CLEANING SYSTEMS CAT",
+      "ID": "000000380"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "PROFNL AIR CARE CAT",
+      "ID": "000000376"
+  },
+  {
+      "BUID": "000000052",
+      "Name": "AUTO DISH ID",
+      "ID": "000000379"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "DIAPER CAT",
+      "ID": "000000123"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "BABY CARE ADJACENCIES",
+      "ID": "000004159"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "BABY WIPES ID",
+      "ID": "000009070"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "MISC BABY CARE ID",
+      "ID": "000009667"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "CHILDRENS PERSONL CR CAT",
+      "ID": "000000139"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "BABY CONNECTED CARE",
+      "ID": "000000378"
+  },
+  {
+      "BUID": "000000053",
+      "Name": "BBY CR NO DETAIL CAT",
+      "ID": "000003582"
+  },
+  {
+      "BUID": "000000054",
+      "Name": "FEMININE CARE CAT",
+      "ID": "000000124"
+  },
+  {
+      "BUID": "000000054",
+      "Name": "ADULT INCONTINENCE CAT",
+      "ID": "000000382"
+  },
+  {
+      "BUID": "000000054",
+      "Name": "INTIMATE CARE CAT",
+      "ID": "000000381"
+  },
+  {
+      "BUID": "000000054",
+      "Name": "FEM CARE NO DETAIL CAT",
+      "ID": "000003585"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "PERSONAL TISSUE ID",
+      "ID": "000004510"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "TOWELS/NAPKINS ID",
+      "ID": "000004511"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "TOILET TISSUE ID",
+      "ID": "000006964"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "PROFNL PAPER CAT",
+      "ID": "000000377"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "MISC FAMILY CARE CAT",
+      "ID": "000009623"
+  },
+  {
+      "BUID": "000000055",
+      "Name": "FAMILY CARE NBD ID",
+      "ID": "000004508"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "DENTIFRICE ID",
+      "ID": "000000115"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "MANUAL ORAL CARE CAT",
+      "ID": "000000369"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "ORAL RINSE CAT",
+      "ID": "'000000370"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "DENTURE CARE CAT",
+      "ID": "'000000371"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "WHTNING/SENSTVTY CAT",
+      "ID": "'000000372"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "DENTAL FLOSS CAT",
+      "ID": "'000000373"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "POWER ORAL CARE CAT",
+      "ID": "'000000374"
+  },
+  {
+      "BUID": "000000056",
+      "Name": "MISC ORAL CARE ID",
+      "ID": "'000009965"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "STOMACH REMEDY CAT",
+      "ID": "'000000119"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "RAPID DIAGNOSTICS CAT",
+      "ID": "'000000335"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "VITAMINS & SUPPLEMENTS",
+      "ID": "'000000350"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "MISC PHC JV",
+      "ID": "000000351"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "LAXATIVE ID",
+      "ID": "'000000360"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PROBIOTIC SUPPLEMENT CAT",
+      "ID": "'000000361"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "FILTRATION ID",
+      "ID": "'000004339"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "RESPIRATORY CARE CAT",
+      "ID": "'000005156"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "MISC PHC ID",
+      "ID": "'000009766"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH MISC PHC",
+      "ID": "'000000354"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH LAXATIVES",
+      "ID": "'000000353"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH ANALGESIC",
+      "ID": "'000000352"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "SLEEP AID ID",
+      "ID": "'000000383"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH PROBIOTIC SUP",
+      "ID": "'000000355"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH RESPIRATORY",
+      "ID": "'000000356"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH STOMACH REMED",
+      "ID": "'000000357"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "PAN-HEALTH VITAMINS & SU",
+      "ID": "'000000358"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "MISC WATER FILTR CAT",
+      "ID": "'000004490"
+  },
+  {
+      "BUID": "000000057",
+      "Name": "ANALGESIC ID",
+      "ID": "'000000120"
+  },
+  {
+      "BUID": "000000059",
+      "Name": "HAIR CARE CAT",
+      "ID": "'000000110"
+  },
+  {
+      "BUID": "000000059",
+      "Name": "MISC HAIR CR CAT",
+      "ID": "000009954"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "FEMALE SKIN CARE CAT",
+      "ID": "'000000111"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "APDO & BODY SPRAY CAT",
+      "ID": "'000000113"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "PERSONAL CLEANSING CAT",
+      "ID": "'000000170"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "EXPERT BEAUTY BOOTS LABS",
+      "ID": "'000000186"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "SUPER PREMIUM SKIN CARE CAT",
+      "ID": "'000000336"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "SUPER PREMIUM COSMETICS CAT",
+      "ID": "'000000337"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "FEMALE PRESTIGE SKIN CR",
+      "ID": "'000000346"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "MASS FRAGRANCE CAT",
+      "ID": "'000000362"
+  },
+  {
+      "BUID": "000000095",
+      "Name": "MISC FEMALE BEAUTY CAT",
+      "ID": "'000009767"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE FRAGRANCE ID",
+      "ID": "'000000168"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE PREM B&R SYS CAT",
+      "ID": "'000000176"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE DISPOSABL RAZ CAT",
+      "ID": "'000000177"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE SHAVE PREP CAT",
+      "ID": "'000000178"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE PREMIUM B&R SYS CAT",
+      "ID": "'000000321"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE DISPOSABL RAZOR CAT",
+      "ID": "'000000322"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "BLADE & RAZORS UNASG CAT",
+      "ID": "'000000323"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE OT SYS/DBL EDGE CAT",
+      "ID": "'000000324"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE SHAVE PREP ID",
+      "ID": "'000000331"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MISC MALE GROOMING CAT",
+      "ID": "'000000334"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE SKIN CARE ID",
+      "ID": "'000000339"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE PRESTIGE PERSONL CR",
+      "ID": "'000000343"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE PRESTIGE GROOMING",
+      "ID": "'000000345"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE POWERED HAIR RMVL",
+      "ID": "'000000363"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE DEPILATORIES",
+      "ID": "'000000385"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "FEMALE GROOMING SK CR CT",
+      "ID": "000000386"
+  },
+  {
+      "BUID": "000000080",
+      "Name": "MALE GROOMING NBD CAT",
+      "ID": "000000175"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "MALE HAIR REMV APPLN CAT",
+      "ID": "000000303"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "FEMALE HR RMVL APPLN CAT",
+      "ID": "000000305"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "COFFEE&HOT BEV APPLN CAT",
+      "ID": "000000306"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "HAND HELDS APPLIANCE CAT",
+      "ID": "000000307"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "FOOD PREP APPLN CAT",
+      "ID": "000000308"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "IRON APPLIANCES",
+      "ID": "000000309"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "JUICERS APPLIANCES CAT",
+      "ID": "000000310"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "OTHER HOUSEHLD APPLN CAT",
+      "ID": "000000311"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "PERS DIAGNOSTC  CAT",
+      "ID": "000000312"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "CLOCK APPLIANCES CAT",
+      "ID": "000000313"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "HAIR CARE APPLIANCE CAT",
+      "ID": "000000314"
+  },
+  {
+      "BUID": "000000081",
+      "Name": "APPLIANCES OTHER CAT",
+      "ID": "000000315"
+  }
+]

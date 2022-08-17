@@ -1,0 +1,134 @@
+<div class="modal-header bg-light d-flex justify-content-between">
+  <div class="d-flex align-items-center">
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle" (click)="bsModalRef.hide()">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <h4 class="modal-title px-3">Filters</h4>
+  </div>
+</div>
+
+<div class="modal-body">
+  <div class="row mb-4">
+    <div class="col-md-4 col-xs-12 py-2">
+      <h6>Fiscal Year</h6>
+      <select class="form-control form-control-sm">
+        <option>2019 - 2020</option>
+        <option>2018 - 2019</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <h6>Forecast Cycle</h6  >
+      <select class="form-control form-control-sm">
+        <option>OCT FIN FCST</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <h6>Project Type</h6>
+      <div class="btn-group">
+        <label class="btn btn-light btn-sm" btnCheckbox role="button">REG</label>
+        <label class="btn btn-light btn-sm" btnCheckbox role="button">CAR</label>
+        <label class="btn btn-light btn-sm" btnCheckbox role="button">FUT</label>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <h6>Flags</h6>
+      <div class="btn-group">
+        <label class="btn btn-light btn-sm" btnCheckbox role="button">ADJ Linked</label>
+      </div>
+    </div>
+  </div>
+
+  <h6>Other Filters</h6>
+  <div class="row">
+  
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Purchasing Group</label>
+      <select class="form-control form-control-sm">
+        <option>a33 - Agathe Boulnois</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Forecast Type</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Start Date</label>
+      <input class="form-control form-control-sm"
+        placement="top" 
+        [bsConfig]="datePickerConfig"
+        bsDatepicker required readonly>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Spend Pool High</label>
+      <select class="form-control form-control-sm">
+        <option>CHEMICALS</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Spend Pool Medium</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Spend Pool Low</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Sub Region</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>BU</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 col-xs-12 py-2">
+      <label>Project Classification</label>
+      <select class="form-control form-control-sm">
+        <option>-</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <label>Backup Buyer(s)</label>
+      <ng-select 
+        [items]="buyers"
+        bindLabel="name"
+        bindValue="id"
+        [multiple]="true"
+        [searchable]="false"
+        [closeOnSelect]="false">
+      </ng-select>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer d-flex align-items-center">
+  <button type="button" class="btn btn-light">Reset</button>
+  <button type="button" class="btn btn-primary" (click)="bsModalRef.hide()">Apply</button>
+</div>

@@ -1,0 +1,424 @@
+//Variable Overrides
+$border-radius:               .65rem;
+$border-radius-lg:            .7rem;
+$border-radius-sm:            .6rem;
+$modal-fade-transform:        scale(0.3);
+$modal-transition:            transform .1s ease-out;
+
+@import "~bootstrap/scss/bootstrap";
+
+$aw-colors: (
+  '_': (
+    'default': (
+      'border-color-default': $light,
+      'background-color-default': $light,
+    ),
+    'current': (
+      'border-color-default': $primary,
+      'background-color-default': $primary,
+    ),
+    'done': (
+      'border-color-default': $success,
+      'background-color-default': $success,
+    )
+  ),
+  'large-filled-symbols': (
+    'default': (
+      'symbol-color-default': black,
+    ),
+    'current': (
+      'symbol-color-default': white,
+    ),
+    'done': (
+      'symbol-color-default': white,
+    )
+  )
+);
+
+$aw-label-color-default: $secondary;
+
+@import '~angular-archwizard/archwizard';
+@import "~@ng-select/ng-select/themes/default.theme";
+
+
+//Custom Variables
+$bg-dark: #111111;
+
+.bg-blur-light {
+  background-color: rgba($color: #f8f9fa, $alpha: 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.bg-blur-white {
+  background-color: rgba($color: #fff, $alpha: 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.bg-blur-dark {
+  background-color: rgba($color: #121B25, $alpha: 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+p, input, button, select, small, a, label, textarea {
+  font-weight: 300 !important;
+}
+
+.btn-circle {
+  border-radius: 10rem;
+}
+
+.btn-ion-icon {
+  padding: 0.5rem;
+  line-height: 0.5;
+  font-size: 1.3rem;
+}
+
+.btn-ion-icon.btn-sm{
+  padding: 0.25rem;
+  line-height: 0.3;
+  font-size: 0.8rem;
+}
+
+.btn-ion-icon.btn-lg{
+  padding: 0.6rem;
+  line-height: 0.6;
+  font-size: 1.5rem;
+}
+
+table {
+  thead, tbody  {
+    font-size: 0.8rem;
+  }
+
+  tbody  > tr a {
+    font-weight: normal;
+  }
+
+  tbody > tr .btn-link {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin: 0px;
+    padding: 0px
+  }
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 0.8rem;
+}
+
+.modal .modal-dialog.modal-full {
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  margin: 0;
+}
+
+.modal .modal-dialog.modal-full .modal-content {
+  height: 100vh;
+  border: 0;
+  border-radius: 0;
+  overflow-y: auto;
+}
+
+.modal .modal-dialog.modal-dialog-centered .modal-content {
+  height: auto !important;
+}
+
+
+// Class overrides
+select.form-control {
+  -webkit-appearance: none;
+  background-image: url('assets/icons/chevron-down-outline.svg') !important;
+	background-repeat: no-repeat !important;
+  background-size: 16px;
+  background-position: right 10px top 50%;
+  padding-right: 35px;
+}
+
+.form-control[bsDatepicker], .form-control-sm[bsDatepicker] {
+  -webkit-appearance: none;
+  background-image: url('assets/icons/calendar-outline.svg') !important;
+	background-repeat: no-repeat !important;
+  background-size: 16px;
+  background-position: right 10px top 50%;
+  padding-right: 35px;
+}
+
+input.form-control[type=search] {
+	-webkit-appearance: none;
+  background-image: url('assets/icons/search.svg') !important;
+  background-repeat: no-repeat !important;
+	background-position: 10px !important;
+	background-size: 20px;
+  padding-left: 35px;
+}
+
+.form-control:disabled {
+  border-style: dashed !important;
+  background: white !important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+}
+
+.form-control:read-only {
+  background-color: $input-bg;
+}
+
+.ng-select {
+  border: 0px;
+  padding: 0px;
+
+  .ng-select-container  {      
+    border: $input-border-width solid $input-border-color;
+    min-height: $input-height;
+    @include border-radius($input-border-radius, 0);
+  
+    .ng-value-container {
+      .ng-placeholder {
+        font-weight: 300;
+      }
+
+      .ng-value {
+        border-radius: 5px !important;
+
+        .ng-value-icon {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .ng-value-label {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .ng-arrow-wrapper {
+      -webkit-appearance: none;
+      background-image: url('assets/icons/chevron-down-outline.svg') !important;
+      background-repeat: no-repeat !important;
+      background-size: 16px;
+      background-position: right 10px top 50%;
+      padding-right: 35px;
+  
+      .ng-arrow {
+        opacity: 0;
+      }
+    }
+  }
+
+  .ng-select-container:hover {
+    box-shadow: none;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option .ng-option-label{
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+.ng-select.ng-select-opened .ng-select-container  {      
+  .ng-arrow-wrapper {
+    background-image: url('assets/icons/chevron-up-outline.svg') !important;
+  }
+}
+
+.table th, .table td {
+  vertical-align: middle !important;
+}
+
+.modal {
+  background-color: rgba($color: #000000, $alpha: 0.5); // Fix to show a 'backdrop' on nested modals
+}
+
+.modal-backdrop.show {
+  opacity: 0; // Hides the default modal backdrop to allow the above fix to work
+}
+
+.nav-pills > .nav-item {
+  margin-right: 5px;
+}
+
+.nav-pills > .nav-item > .nav-link:not(.disabled) {
+  cursor: pointer;
+}
+
+.nav-pills > .nav-item > .nav-link:not(.active):not(.disabled) {
+  background-color: $light;
+}
+
+.nav-pills > .nav-item > .nav-link:hover:not(.active) {
+  background-color: $gray-300;
+}
+
+body .ui-inputtext {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.45rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+body .ui-inputtext:enabled:hover:not(.ui-state-error) {
+  border-color: #ced4da;
+}
+
+body .ui-autocomplete-panel .ui-autocomplete-items .ui-autocomplete-list-item {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+
+// Dark mode
+
+/*@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $bg-dark;
+  }
+
+  .bg-white {
+    background-color: $bg-dark !important;
+  }
+
+  .bg-blur-dark {
+    background-color: rgba($color: rgb(11, 16, 22), $alpha: 0.85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .navbar-light {
+    .navbar-brand {
+      color: $navbar-dark-brand-color;
+  
+      @include hover-focus() {
+        color: $navbar-dark-brand-hover-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $gray-500;
+  
+        @include hover-focus() {
+          color: $gray-400;
+        }
+  
+        &.disabled {
+          color: $gray-600;
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $gray-400;
+      }
+    }
+  }
+
+  .border, .border-right, .border-left, .border-top, .border-bottom {
+    border-color: $gray-800 !important;
+  }
+
+  .form-control, .form-control:focus {
+    background-color: $gray-900;
+    color: white;
+    border-color: $gray-800;
+  }
+
+  .form-control::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: $gray-700 !important;  
+    background-image: url('assets/icons/close-sharp.svg') !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .text-secondary {
+    color: $gray-400 !important;
+  }
+
+  .btn-light {
+    background-color: $gray-900;
+    border-color: $gray-900;
+    color: white;
+  }
+
+  .btn-light:hover{
+    background-color: $gray-800;
+    border-color: $gray-800;
+    color: white;
+  }
+
+  .btn-light:active, .btn-light:focus {
+    background-color: darken($gray-800, 3%) !important;
+    border-color: darken($gray-800, 3%) !important;
+    color: white !important;
+  }
+
+  .popover {
+    background-color: $gray-900;
+  }
+
+  .bs-popover-right > .arrow::after,.bs-popover-auto[x-placement^=right] > .arrow::after {
+    border-right-color: $gray-900;
+  }
+
+  .bs-popover-bottom > .arrow::after,.bs-popover-auto[x-placement^=bottom] > .arrow::after {
+    border-bottom-color: $gray-900;
+  }
+
+  .bs-popover-top > .arrow::after,.bs-popover-auto[x-placement^=top] > .arrow::after {
+    border-top-color: $gray-900;
+  }
+
+  .bs-popover-left > .arrow::after,.bs-popover-auto[x-placement^=left] > .arrow::after {
+    border-left-color: $gray-900;
+  }
+
+  .list-group-item {
+    color: white;
+    border-color: $gray-800;
+  }
+
+  .list-group-item.list-group-item-action:hover {
+    background-color: $gray-800;
+    color: white;
+  }
+
+  .table .thead-light {
+    th {
+      color: $table-dark-color !important;
+      background-color: $gray-900 !important;
+      border-color: $gray-800 !important;
+    }
+  }
+
+  .table td {
+    color: white;
+    border-color: $gray-800;
+  }
+
+  .pagination > .page-item:not(.active) > .page-link {
+    background-color: $gray-900;
+    border-color: $gray-800;
+  }
+}*/

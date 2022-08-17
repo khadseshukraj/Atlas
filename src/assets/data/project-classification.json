@@ -1,0 +1,62 @@
+[
+  {
+    "ID": "1",
+    "Name": "Base Rebates/Penalties"
+  },
+  {
+    "ID": "2",
+    "Name": "BU Driven Init/Reform HURTS"
+  },
+  {
+    "ID": "3",
+    "Name": "Commercial Savings"
+  },
+  {
+    "ID": "4",
+    "Name": "Commodity"
+  },
+  {
+    "ID": "5",
+    "Name": "Incremental Rebates/Penalties"
+  },
+  {
+    "ID": "6",
+    "Name": "Initiative / Reformulation / Redesign"
+  },
+  {
+    "ID": "7",
+    "Name": "Other Drivers"
+  },
+  {
+    "ID": "8",
+    "Name": "VC – Asset Utilization / Cash"
+  },
+  {
+    "ID": "9",
+    "Name": "VC – iNOS"
+  },
+  {
+    "ID": "10",
+    "Name": "VC – Pricing Avoidance"
+  },
+  {
+    "ID": "11",
+    "Name": "VC – Value Add"
+  },
+  {
+    "ID": "12",
+    "Name": "Prior Year Base Spend"
+  },
+  {
+    "ID": "13",
+    "Name": "MSM - VC Inventory change - Supply Design"
+  },
+  {
+    "ID": "14",
+    "Name": "MSM - VC Inventory change - Operational/parameter change"
+  },
+  {
+    "ID": "15",
+    "Name": "MSM - VC Inventory change - Others"
+  }
+]

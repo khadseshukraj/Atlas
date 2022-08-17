@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand navbar-light bg-white sticky-top pl-0" style="top:58px;">
+  <div class="d-flex align-items-center justify-contents-start">
+    <a class="btn btn-light btn-ion-icon btn-circle" [tooltip]="'Back'" [routerLink]="['../']">
+      <ion-icon name="arrow-back"></ion-icon>
+    </a>
+    <h1 class="navbar-brand mb-0 ml-3"> Allocation Keys Maintainance</h1>
+  </div>
+</nav>
+
+<div class="sticky-top bg-white py-2 border-bottom d-flex justify-content-between align-items-center" style="top:114px">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active">FY-19/20</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">FY-20/21</a>
+    </li>
+  </ul>
+
+  <div>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Filters" (click)="openFiltersModal()">
+      <ion-icon name="filter-outline"></ion-icon>
+    </button>
+    <label class="btn btn-light btn-ion-icon btn-circle mx-1 mt-2" tooltip="Upload Template">
+      <ion-icon src="assets/icons/excel-up.svg"></ion-icon>
+      <input type="file" (change)="handleFileInput($event.target)" accept=".xlsx,.xls,.csv" hidden/>
+    </label>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Download Template">
+      <ion-icon src="assets/icons/excel-down.svg"></ion-icon>
+    </button>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Download Data">
+      <ion-icon name="arrow-down"></ion-icon>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-ion-icon btn-lg btn-circle mx-3" tooltip="Add" (click)="openAddAllocationKeyModal()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Sub Region</th>
+        <th>BU</th>
+        <th>SPH</th>
+        <th>SPM</th>
+        <th>SPL</th>
+        <th>Category</th>
+        <th>Impact Spend</th>
+        <th>Allocation %</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let key of keys">
+        <td>{{key.subRegion}}</td>
+        <td>{{key.businessUnit}}</td>
+        <td>{{key.spendPoolHigh}}</td>
+        <td>{{key.spendPoolMedium}}</td>
+        <td>{{key.spendPoolLow}}</td>
+        <td>{{key.category}}</td>
+        <td>{{key.impactSpend}}</td>
+        <td>{{key.allocationPercent}}</td>
+        <td>
+          <button class="btn btn-light btn-ion-icon btn-circle btn-sm float-right" id="dropdownMenuButton" data-toggle="dropdown">
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" (click)="openModifyAllocationKeyModal()"><ion-icon name="pencil"></ion-icon> Edit</a>
+            <a class="dropdown-item text-danger" (click)="openDeleteModal()"><ion-icon name="trash"></ion-icon> Delete</a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-center py-4">
+    <pagination *ngIf="totalItems > itemsPerPage" [maxSize]="5" [boundaryLinks]="true" [totalItems]="totalItems" [itemsPerPage]="itemsPerPage"
+      previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"
+      (pageChanged)="pageChanged($event)"></pagination>
+  </div>
+
+</div>

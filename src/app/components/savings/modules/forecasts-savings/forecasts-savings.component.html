@@ -1,0 +1,149 @@
+<nav class="navbar navbar-expand navbar-light bg-white sticky-top pl-0" style="top:58px;">
+  <div class="pr-5 border-right">
+    <div class="d-flex align-items-center">
+      <h1 class="navbar-brand mb-0">Forecasts Savings</h1>
+      <button class="btn btn-light btn-ion-icon btn-circle btn-sm"
+            [popover]="viewsListTemplate"
+            placement="bottom"
+            [outsideClick]="true"
+            containerClass="shadow"
+            container="body"
+            #pop="bs-popover">
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+    
+    <small class="text-secondary font-weight-bold d-block">19/20 OCT FIN FCST</small>
+  </div>
+
+  <div class="collapse navbar-collapse pl-4">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link ion-icon-link d-flex align-items-center" [routerLink]="['dashboard']">
+          <ion-icon name="stats-chart" class="mr-2"></ion-icon> Dashboard
+        </a>
+      </li>
+      <li class="nav-item pl-3" *ngxPermissionsOnly="['D_BUYER']">
+        <a class="nav-link ion-icon-link d-flex align-items-center" [routerLink]="['buyers']">
+          <ion-icon name="person" class="mr-2"></ion-icon> Buyers
+        </a>
+      </li>
+      <li class="nav-item pl-3" *ngxPermissionsOnly="['F&A']">
+        <a class="nav-link ion-icon-link d-flex align-items-center" [routerLink]="['allocation-keys-maintainance']">
+          <ion-icon name="construct" class="mr-2"></ion-icon> Allocation Keys Maintainance
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="sticky-top bg-white py-2 border-bottom d-flex justify-content-between align-items-center" style="top:133px">
+  <input class="form-control col-4" placeholder="Search" type="search"/>
+  <div>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Filters" (click)="openFiltersModal()">
+      <ion-icon name="filter-outline"></ion-icon>
+    </button>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Options" (click)="openOptionsModal()">
+      <ion-icon name="options-outline"></ion-icon>
+    </button>
+    <label class="btn btn-light btn-ion-icon btn-circle mx-1 mt-2" tooltip="Upload Template">
+      <ion-icon src="assets/icons/excel-up.svg"></ion-icon>
+      <input type="file" (change)="handleFileInput($event.target)" accept=".xlsx,.xls,.csv" hidden/>
+    </label>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Download Template">
+      <ion-icon src="assets/icons/excel-down.svg"></ion-icon>
+    </button>
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-1" tooltip="Download Data">
+      <ion-icon name="arrow-down"></ion-icon>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-ion-icon btn-lg btn-circle mx-3" (click)="openNewProjectModal()" tooltip="New Project">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th class="text-center border-top-0">
+          <button class="btn btn-light btn-ion-icon btn-circle btn-sm m-0"
+            [popover]="statusListTemplate"
+            placement="right"
+            [outsideClick]="true"
+            containerClass="shadow">
+            <ion-icon name="ellipsis-vertical"></ion-icon>
+          </button>
+        </th>
+        <th class="border-top-0">Number</th>
+        <th class="border-top-0">Name</th>
+        <th class="border-top-0">Sub Region</th>
+        <th class="border-top-0">Spend Pool Low</th>
+        <th class="border-top-0">Project Classification</th>
+        <th class="border-top-0">Start Date</th>
+        <th class="border-top-0">Project Value $MM</th>
+        <th class="border-top-0">TPA $MM</th>
+        <th class="border-top-0">Probability</th>
+        <th class="border-top-0"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proj of projectsPerPage">
+        <td class="text-center"><ion-icon name="ellipse" class="text-warning" *ngIf="proj.hasAdjustment"></ion-icon></td>
+        <td><button class="btn btn-link" (click)="openEditProjectModal(proj)">{{proj.number}}</button></td>
+        <td>{{proj.name}}</td>
+        <td>{{proj.subRegions}}</td>
+        <td>{{proj.spendPoolLow}}</td>
+        <td>{{proj.classification}}</td>
+        <td>{{proj.startDate}}</td>
+        <td>{{proj.value}}</td>
+        <td>{{proj.tpa}}</td>
+        <td>{{proj.probability}}</td>
+        <td>
+          <button class="btn btn-light btn-ion-icon btn-circle btn-sm float-right" id="dropdownMenuButton" data-toggle="dropdown">
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"><ion-icon name="copy"></ion-icon> Copy</a>
+            <a class="dropdown-item text-danger" (click)="openDeleteModal()"><ion-icon name="trash"></ion-icon> Delete</a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-center py-4">
+    <pagination *ngIf="totalItems > itemsPerPage" [maxSize]="5" [boundaryLinks]="true" [totalItems]="totalItems" [itemsPerPage]="itemsPerPage"
+      previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;" [pageBtnClass]="'btn-light'"
+      (pageChanged)="pageChanged($event)"></pagination>
+  </div>
+
+</div>
+
+<ng-template #statusListTemplate>
+  <ul class="list-group list-group-flush" style="width: 250px;">
+    <li class="list-group-item"><h5>Status List</h5></li>
+    <li class="list-group-item border-0 d-flex align-items-center">
+      <ion-icon name="ellipse" class="text-warning mr-1"></ion-icon> Adjustment Entry from F&A
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #viewsListTemplate>
+  <div class="list-group list-group-flush" style="width: 250px;">
+    <a class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-between" 
+      [routerLink]="['forecasts-savings']" (click)="pop.hide()">
+      Forecasts Savings 
+      <ion-icon name="checkmark" class="text-primary" style="font-size: 1.5rem;"></ion-icon> 
+    </a>
+    <a class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-between" 
+      [routerLink]="['el-savings']" (click)="pop.hide()">
+      Embedded Logistics Savings
+    </a>
+    <a class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-between" 
+      [routerLink]="['allocation-savings']" (click)="pop.hide()">
+      Allocation Savings
+    </a>
+  </div>
+</ng-template>

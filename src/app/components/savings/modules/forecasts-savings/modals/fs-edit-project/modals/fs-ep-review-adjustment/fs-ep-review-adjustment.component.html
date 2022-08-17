@@ -1,0 +1,41 @@
+<div class="modal-header d-flex align-items-center">
+  <div class="d-flex align-items-center">
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle" (click)="bsModalRef.hide()" [tooltip]="'Cancel'">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <h5 class="modal-title px-3">Link ADJ Project to REG</h5>
+  </div>
+</div>
+<form [formGroup]="form">
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th></th>
+          <th>ADJ Project ID</th>
+          <th>ADJ Project Name</th>
+          <th>REG Project Value (Current)</th>
+          <th>REG Project Value (Adjusted)</th>
+          <th>REG Project Value (New)</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" formControlName="adjCheckbox"></td>
+          <td>ADJ000083570705</td>
+          <td>PGC 3RD PARTY TRANSFER PRICE</td>
+          <td>-0.074</td>
+          <td>-0.4</td>
+          <td>-0.474</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+
+<div class="modal-footer d-flex align-items-center">
+  <button type="button" class="btn btn-danger" [disabled]="!form.valid" (click)="rejectAdjustment()">Reject</button>
+  <button type="button" class="btn btn-primary" [disabled]="!form.valid" (click)="approveAdjustment()">Approve</button>
+</div>

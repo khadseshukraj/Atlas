@@ -1,0 +1,189 @@
+<div class="modal-header bg-light fixed-top d-flex justify-content-between">
+  <div class="d-flex align-items-center">
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle" (click)="cancel()" [tooltip]="'Cancel'">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <h4 class="modal-title px-3">Add Allocation Key</h4>
+  </div>
+  
+  <div class="d-flex align-items-center">
+    <button type="button" class="btn btn-primary btn-ion-icon btn-circle mx-3" [disabled]="!lines.valid" (click)="finishAdd()" [tooltip]="'Save'">
+      <ion-icon name="save"></ion-icon>
+    </button>
+  </div>
+</div>
+<div class="modal-body pt-5">
+  <div class="container pt-4">
+      <form [formGroup]="f1" class="py-4">
+          <div class="row py-2">
+              <div class="col-md-3 col-xs-12">
+                  <label>Fiscal Year</label>
+                  <select class="form-control" formControlName="fiscalYear" required>
+                      <option value="2019_2020">19/20</option>
+                  </select>
+  
+                  <div *ngIf="c(f1).fiscalYear.errors && c(f1).fiscalYear.touched" class="d-inline">
+                      <small *ngIf="c(f1).fiscalYear.errors.required" class="text-danger">Fiscal Year is required </small>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12">
+                  <label>Spend Pool High</label>
+                  <select class="form-control" formControlName="spendPoolHigh" required>
+                      <option></option>
+                      <option *ngFor="let sph of spendPoolsHigh" [value]="sph.ID">{{sph.Name}}</option>
+                  </select>
+  
+                  <div *ngIf="c(f1).spendPoolHigh.errors && c(f1).spendPoolHigh.touched" class="d-inline">
+                      <small *ngIf="c(f1).spendPoolHigh.errors.required" class="text-danger">Spend Pool High is required </small>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                  <label>Spend Pool Medium</label>
+                  <select class="form-control" formControlName="spendPoolMedium" required>
+                      <option></option>
+                      <option *ngFor="let spm of spendPoolsMedium" [value]="spm.ID">{{spm.Name}}</option>
+                  </select>
+  
+                  <div *ngIf="c(f1).spendPoolMedium.errors && c(f1).spendPoolMedium.touched" class="d-inline">
+                      <small *ngIf="c(f1).spendPoolMedium.errors.required" class="text-danger">Spend Pool Medium is required </small>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-xs-12">
+                  <label>Spend Pool Low</label>
+                  <select class="form-control" formControlName="spendPoolLow" required>
+                      <option></option>
+                      <option *ngFor="let spl of spendPoolsLow" [value]="spl.ID">{{spl.Name}}</option>
+                  </select>
+  
+                  <div *ngIf="c(f1).spendPoolLow.errors && c(f1).spendPoolLow.touched" class="d-inline">
+                      <small *ngIf="c(f1).spendPoolLow.errors.required" class="text-danger">Spend Pool Low is required </small>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="row py-2">
+              <div class="col-md-3 col-xs-12">
+                  <label>Sub Region</label>
+                  <select class="form-control" formControlName="subRegion" required>
+                      <option></option>
+                      <option *ngFor="let subReg of subRegions" [value]="subReg.ID">{{subReg.Name}}</option>
+                  </select>
+
+                  <div *ngIf="c(f1).subRegion.errors && c(f1).subRegion.touched" class="d-inline">
+                      <small *ngIf="c(f1).subRegion.errors.required" class="text-danger">Sub Region is required </small>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12">
+                  <label>Business Unit</label>
+                  <select class="form-control" formControlName="businessUnit" required>
+                      <option></option>
+                      <option *ngFor="let busUnit of businessUnits" [value]="busUnit.ID">{{busUnit.Name}}</option>
+                  </select>
+  
+                  <div *ngIf="c(f1).businessUnit.errors && c(f1).businessUnit.touched" class="d-inline">
+                      <small *ngIf="c(f1).businessUnit.errors.required" class="text-danger">Business Unit is required </small>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12">
+                  <label>Category</label>
+                  <select class="form-control" formControlName="category" required>
+                      <option></option>
+                      <option *ngFor="let cat of categories" [value]="cat.ID">{{cat.Name}}</option>
+                  </select>
+      
+                  <div *ngIf="c(f1).category.errors && c(f1).category.touched" class="d-inline">
+                      <small *ngIf="c(f1).category.errors.required" class="text-danger">Category is required </small>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12 d-flex justify-content-end align-items-end mt-2">
+                <button type="button" class="btn btn-primary" [disabled]="!f1.valid" (click)="linesLoaded = true">Get Lines</button>
+              </div>
+          </div>
+
+      </form>
+
+      <div class="table-responsive pt-4" *ngIf="linesLoaded">
+        <form [formGroup]="f1">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th width="20%">Plan</th>
+                        <th width="15%">TDCVal</th>
+                        <th width="10%">CCPC</th>
+                        <th width="10%">Currency</th>
+                        <th width="15%">Profit Center</th>
+                        <th width="15%">Impact Spend</th>
+                        <th width="10%">Allocation %</th>
+                        <th width="5%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let line of lines.controls; let idx = index">
+                        <td>
+                            <select class="form-control" [formControl]="l(lines, idx).plan" required>
+                                <option></option>
+                                <option>SINGAPORE PLANT-P&G</option>
+                                <option>TOLL LOGISTICS ASIA</option>
+                            </select>
+
+                            <div *ngIf="l(lines, idx).plan.errors && l(lines, idx).plan.touched" class="d-inline">
+                                <small *ngIf="l(lines, idx).plan.errors.required" class="text-danger">Plan is required </small>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" [formControl]="l(lines, idx).tdcVal" required>
+                            <div *ngIf="l(lines, idx).tdcVal.errors && l(lines, idx).tdcVal.touched" class="d-inline">
+                              <small *ngIf="l(lines, idx).tdcVal.errors.required" class="text-danger">TDCVal is required </small>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" [formControl]="l(lines, idx).ccpc">
+                        </td>
+                        <td>
+                            <input class="form-control" [formControl]="l(lines, idx).currency">
+                        </td>
+                        <td>
+                            <input class="form-control" [formControl]="l(lines, idx).profitCenter">
+                        </td>
+                        <td>
+                            <input min="0" class="form-control" [formControl]="l(lines, idx).impactSpend" required>
+                            <div *ngIf="l(lines, idx).impactSpend.errors && l(lines, idx).impactSpend.touched" class="d-inline">
+                              <small *ngIf="l(lines, idx).impactSpend.errors.required" class="text-danger">Impact Spend is required </small>
+                            </div>
+                        </td>
+                        <td>
+                          {{calculationAllocationPercent(l(lines, idx).impactSpend.value) | number:'.0-2'}}
+                        </td>
+                        <td>
+                            <button class="btn btn-danger btn-ion-icon btn-circle btn-sm m-0" (click)="removeLine(idx)">
+                                <ion-icon name="trash"></ion-icon>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btn btn-primary d-flex align-items-center" (click)="addLine()">
+                          <ion-icon name="add" class="mr-2"></ion-icon> Add Line
+                        </button>
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+      </div>
+
+  </div>
+</div>

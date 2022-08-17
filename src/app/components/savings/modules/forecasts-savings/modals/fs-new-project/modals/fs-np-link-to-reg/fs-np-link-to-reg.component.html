@@ -1,0 +1,75 @@
+<div class="modal-header d-flex">
+  <h5 class="modal-title">Link REG Projects</h5>
+</div>
+<div class="modal-body">
+  <div class="row pb-2">
+    <div class="col-md-3 col-xs-12">
+      <label>Forecast Cycle</label>
+      <select class="form-control">
+        <option value="OCT_FIN_FCST">OCT FIN FCST</option>
+      </select>
+    </div>
+
+    <div class="col-md-3 col-xs-12">
+      <label>Spend Pool Low</label>
+      <select class="form-control">
+      </select>
+    </div>
+
+    <div class="col-md-6 col-xs-12">
+      <label>Buyers</label>
+      <div class="input-group">
+        <input class="form-control" placeholder="Search" type="search"/>
+        <div class="input-group-append">
+          <button type="button" class="btn btn-primary btn-ion-icon" (click)="showResults=true">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form [formGroup]="form">
+  <div class="table-responsive" [hidden]="!showResults">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th></th>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Buyer</th>
+          <th>Spend Pool Low</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="radio" formControlName="projCheckbox" value="REG0000835689"></td>
+          <td>REG0000835689</td>
+          <td>LA Stretch Wrap: New Business</td>
+          <td>Luis Alvarado</td>
+          <td>PKF - FLEXIBLE</td>
+        </tr>
+        <tr>
+          <td><input type="radio" formControlName="projCheckbox" value="REG0000835690"></td>
+          <td>REG0000835690</td>
+          <td>LA Stretch Wrap: New Business 2</td>
+          <td>Alejandro Pérez</td>
+          <td>PKF - FLEXIBLE</td>
+        </tr>
+        <tr>
+          <td><input type="radio" formControlName="projCheckbox" value="REG0000835691"></td>
+          <td>REG0000835691</td>
+          <td>LA Stretch Wrap: New Business 3</td>
+          <td>Alejandro Chaves</td>
+          <td>PKF - FLEXIBLE</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+
+<div class="modal-footer d-flex align-items-center">
+  <button type="button" class="btn btn-light" (click)="bsModalRef.hide()">Cancel</button>
+  <button type="button" class="btn btn-primary" [disabled]="!form.valid" (click)="done()">OK</button>
+</div>

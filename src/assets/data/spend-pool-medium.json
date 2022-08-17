@@ -1,0 +1,367 @@
+[
+  {
+    "SPHID": "D010000",
+    "ID": "D010100",
+    "Name": "DEVICES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010200",
+    "Name": "SUBSTRATES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010300",
+    "Name": "CANDLE-MAKING"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010400",
+    "Name": "POWDER MAKE/PACK"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010600",
+    "Name": "COSMETICS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010700",
+    "Name": "AEROSOLS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010800",
+    "Name": "BAR SOAP/LAUNDRY BARS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D010900",
+    "Name": "MANIPULATION"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011000",
+    "Name": "EDIBLES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011100",
+    "Name": "UNIT DOSE"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011200",
+    "Name": "FILTERS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011300",
+    "Name": "HEALTH ADJACENCIES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011400",
+    "Name": "PACK CENTERS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011500",
+    "Name": "MISCELLANEOUS"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011600",
+    "Name": "EXTERNAL SUPPLY MAPPING (ADMIN)"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011700",
+    "Name": "MANUFACTURING SERVICES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D011800",
+    "Name": "CONTRACT MANUFACTURING SERVICES"
+  },
+  {
+    "SPHID": "D010000",
+    "ID": "D012000",
+    "Name": "PG Professional"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030100",
+    "Name": "AD ACTIVES/EXCIPIENTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030200",
+    "Name": "ALKALIS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030300",
+    "Name": "STABILIZERS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030400",
+    "Name": "BIOCIDE/PRESERVATIVES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030500",
+    "Name": "BLEACHES/BLEACH ACTIVATORS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030600",
+    "Name": "BRIGHTENERS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030700",
+    "Name": "APDO ACTIVES/FEEDSTOCKS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030800",
+    "Name": "FILLERS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D030900",
+    "Name": "CELLULOSIC DERIVATIVES & STARCHES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031000",
+    "Name": "CHELANTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031100",
+    "Name": "CITRIC ACID/CITRATES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031300",
+    "Name": "ELEMENTAL CHEMISTRY BASIC SALTS & ACIDS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031400",
+    "Name": "ENZYMES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031500",
+    "Name": "FABRIC SOFTENER ACTIVES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031600",
+    "Name": "FATTY ACIDS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031700",
+    "Name": "FORMATES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031800",
+    "Name": "HEALTH CARE ACTIVES/EXCIPIENTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D031900",
+    "Name": "MELAMINE FOAM"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032000",
+    "Name": "PETROLATUM OILS WAXES & LOTIONS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032100",
+    "Name": "PIGMENTS DYES & COLORANTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032200",
+    "Name": "POLYMERS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032300",
+    "Name": "PROPELLANTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032400",
+    "Name": "RHEOLOGY MODIFYERS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032500",
+    "Name": "SACCHARIN"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032600",
+    "Name": "SILICA SILICATES & DERIVATIVES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032700",
+    "Name": "SILICONES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032800",
+    "Name": "SKIN CONDITIONING AGENT"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D032900",
+    "Name": "SOLVENTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033000",
+    "Name": "SUPER ABSORBENTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033100",
+    "Name": "SURFACTANTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033200",
+    "Name": "PHOSPHATES"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033300",
+    "Name": "WATER SOLUABLE FILMS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033400",
+    "Name": "CHEMICALS (ADMIN)"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033600",
+    "Name": "HISTORIC CHEMICALS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033700",
+    "Name": "F&F GROUP"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033800",
+    "Name": "FATS & OILS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D033900",
+    "Name": "INGREDIENTS"
+  },
+  {
+    "SPHID": "D030000",
+    "ID": "D034000",
+    "Name": "PURCHASED CHEMICALS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040100",
+    "Name": "ABSORBENT FIBERS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040200",
+    "Name": "ADHESIVES & SEALANTS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040300",
+    "Name": "AIRLAID"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040400",
+    "Name": "SPUNLACE"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040600",
+    "Name": "DIAPER ELASTICS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040700",
+    "Name": "FASTENING"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040800",
+    "Name": "STRETCH"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D040900",
+    "Name": "PACKAGING DISPLAYS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041000",
+    "Name": "NON-WOVEN"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041100",
+    "Name": "PULP"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041200",
+    "Name": "TISSUE"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041300",
+    "Name": "PLASTIC PACKAGING MATLS & COMPONENTS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041400",
+    "Name": "PLASTIC PACKAGING RAW MATL"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041500",
+    "Name": "PRINTED PACKAGING"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041600",
+    "Name": "PRODUCT FILMS"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041700",
+    "Name": "PROTECTIVE PACKAGING"
+  },
+  {
+    "SPHID": "D040000",
+    "ID": "D041800",
+    "Name": "PACKAGING/HYGIENE (ADMIN)"
+  }
+]

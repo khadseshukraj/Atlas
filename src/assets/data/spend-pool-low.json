@@ -1,0 +1,1267 @@
+[
+  {
+    "SPMID": "D010100",
+    "ID": "D010101",
+    "Name": "BATTERIES & CELLS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010102",
+    "Name": "BATTERY - CAN MATLS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010103",
+    "Name": "INTERMEDIATES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010104",
+    "Name": "MFRD PARTS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010105",
+    "Name": "FINISHED PRODUCT"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010106",
+    "Name": "BATTERY - LITHO JACKETS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010107",
+    "Name": "BATTERY - METALS/MINERALS-9V TERMINALS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010108",
+    "Name": "BATTERY - METALS-INDIUM"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010109",
+    "Name": "BATTERY - METAL-OTHER"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010110",
+    "Name": "BATTERY - METAL-STEEL"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010111",
+    "Name": "BATTERY - METAL-ZINC"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010112",
+    "Name": "BATTERY - METAL-GRAPHITE"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010113",
+    "Name": "BATTERY - METAL-MANGANESEDIOXIDE ELCTRO"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010115",
+    "Name": "BATTERY PARTS - FLAT"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010116",
+    "Name": "BATTERY PARTS - MOLDED"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010117",
+    "Name": "BATTERY PARTS - OTHER"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010118",
+    "Name": "BATTERY - SEPARATORS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010119",
+    "Name": "BATTERY - WIRES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010121",
+    "Name": "DEVICES - PURCHSD FINPROD-CHARGER/BATTERIES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010122",
+    "Name": "DEVICES - PURCHSD FINPROD-FLASHLIGHTS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010123",
+    "Name": "METAL - NICKEL-PLATED STEEL"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010124",
+    "Name": "METAL OXIDES NON FERROUS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010126",
+    "Name": "DEVICES - PURCHSD FINPROD-LITHIUM"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010127",
+    "Name": "METAL - ZINC FINES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010128",
+    "Name": "REINFORCING RINGS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010129",
+    "Name": "DEVICES - MFRD PARTS-RECHARGEABL BATTERIES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010131",
+    "Name": "DEVICES - PURCHSD FINPROD-OEM BATTERIES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010132",
+    "Name": "VULCANIZED FIBER PARTS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010134",
+    "Name": "B-R - DIE CAST HANDLES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010135",
+    "Name": "B-R - INJ MOLDED RAZORS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010136",
+    "Name": "B-R - MISC RAZOR HANDLES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010137",
+    "Name": "B-R - DISPOSABLE RAZORS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010138",
+    "Name": "B-R - ALUMINUM STRIPS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010139",
+    "Name": "B-R - BLADE STEEL"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010140",
+    "Name": "B-R - PLATINUM"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010141",
+    "Name": "B-R - STAINLESS STEEL"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010142",
+    "Name": "B-R - MISCELLANEOUS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010143",
+    "Name": "DEVICES - CIRCUIT BOARDS-PRINTED"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010144",
+    "Name": "DEVICES - POUCHES/CASES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010145",
+    "Name": "PRD INTEGRATED CIRCUITS MICROCHIPS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010146",
+    "Name": "DEVICES - PLASTIC PARTS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010147",
+    "Name": "POWER SUPPLY-CORDS-OTHER DEVICES"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010148",
+    "Name": "PRD MOTORS UNIVERSAL"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010150",
+    "Name": "ELECTPARTS/LAMPS/LED/TRANSITR/ETC"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "D010151",
+    "Name": "SEMICONDUCTORS"
+  },
+  {
+    "SPMID": "D010100",
+    "ID": "DSPMMAP",
+    "Name": "SPM MAPPING"
+  },
+  {
+    "SPMID": "D010200",
+    "ID": "D010201",
+    "Name": "WET SUBSTRATES"
+  },
+  {
+    "SPMID": "D010200",
+    "ID": "D010202",
+    "Name": "DRY SUBSTRATES"
+  },
+  {
+    "SPMID": "D010200",
+    "ID": "D010203",
+    "Name": "MINERALS"
+  },
+  {
+    "SPMID": "D010200",
+    "ID": "D010204",
+    "Name": "METAL PROCESSING"
+  },
+  {
+    "SPMID": "D010300",
+    "ID": "D010301",
+    "Name": "CANDLE-MAKING"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010401",
+    "Name": "BEAUTY"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010402",
+    "Name": "HEALTH OTC"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010403",
+    "Name": "HEALTH PRESCRIPTION"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010404",
+    "Name": "FABRIC"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010405",
+    "Name": "PSYLLIUM-HANDLING"
+  },
+  {
+    "SPMID": "D010400",
+    "ID": "D010406",
+    "Name": "POWDER ENZYME-HANDLING"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010501",
+    "Name": "EXPLOSION-PROOF (X-P)"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010502",
+    "Name": "OTC LIQUIDS"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010503",
+    "Name": "PRESCRIPTION LIQUIDS"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010504",
+    "Name": "HAIR COLOR"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010505",
+    "Name": "LOW VISCOSITY"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010506",
+    "Name": "MEDIUM VISCOSITY"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010507",
+    "Name": "HIGH VISCOSITY"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010508",
+    "Name": "APDO"
+  },
+  {
+    "SPMID": "D010500",
+    "ID": "D010509",
+    "Name": "LIQUID ENZYME-HANDLING"
+  },
+  {
+    "SPMID": "D010600",
+    "ID": "D010601",
+    "Name": "PENCILS"
+  },
+  {
+    "SPMID": "D010600",
+    "ID": "D010602",
+    "Name": "COMPACTS"
+  },
+  {
+    "SPMID": "D010600",
+    "ID": "D010603",
+    "Name": "LIPSTICKS"
+  },
+  {
+    "SPMID": "D010700",
+    "ID": "D010701",
+    "Name": "HYDROCARBON"
+  },
+  {
+    "SPMID": "D010700",
+    "ID": "D010702",
+    "Name": "COMPRESSED GAS"
+  },
+  {
+    "SPMID": "D010800",
+    "ID": "D010801",
+    "Name": "ORGANIC"
+  },
+  {
+    "SPMID": "D010800",
+    "ID": "D010802",
+    "Name": "SYNTHETIC"
+  },
+  {
+    "SPMID": "D010900",
+    "ID": "D010901",
+    "Name": "REPACK"
+  },
+  {
+    "SPMID": "D010900",
+    "ID": "D010902",
+    "Name": "ASSEMBLY"
+  },
+  {
+    "SPMID": "D011000",
+    "ID": "D011001",
+    "Name": "BAKING"
+  },
+  {
+    "SPMID": "D011000",
+    "ID": "D011002",
+    "Name": "FRYING"
+  },
+  {
+    "SPMID": "D011000",
+    "ID": "D011003",
+    "Name": "PET"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011101",
+    "Name": "TABLETS"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011102",
+    "Name": "LIQUICAPS"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011103",
+    "Name": "CAPLETS"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011104",
+    "Name": "SOFT GEL"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011105",
+    "Name": "CAPSULE"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011106",
+    "Name": "ASSEMBLY"
+  },
+  {
+    "SPMID": "D011100",
+    "ID": "D011107",
+    "Name": "MAKING"
+  },
+  {
+    "SPMID": "D011200",
+    "ID": "D011201",
+    "Name": "REFRIGERATOR"
+  },
+  {
+    "SPMID": "D011200",
+    "ID": "D011202",
+    "Name": "FAUCET MOUNT"
+  },
+  {
+    "SPMID": "D011200",
+    "ID": "D011203",
+    "Name": "PITCHER"
+  },
+  {
+    "SPMID": "D011300",
+    "ID": "D011301",
+    "Name": "WEB HANDLING (EG WHITESTRIPS)"
+  },
+  {
+    "SPMID": "D011300",
+    "ID": "D011302",
+    "Name": "FLOSS FIBER PRODUCTION"
+  },
+  {
+    "SPMID": "D011300",
+    "ID": "D011303",
+    "Name": "FLOSS HINGES/RETAIL"
+  },
+  {
+    "SPMID": "D011300",
+    "ID": "D011304",
+    "Name": "FLOSS MANIPULATION"
+  },
+  {
+    "SPMID": "D011300",
+    "ID": "D011305",
+    "Name": "OB PROF ADJACENCIES"
+  },
+  {
+    "SPMID": "D011400",
+    "ID": "D011401",
+    "Name": "GILLETTE"
+  },
+  {
+    "SPMID": "D011400",
+    "ID": "D011402",
+    "Name": "PGIO"
+  },
+  {
+    "SPMID": "D011500",
+    "ID": "D011501",
+    "Name": "MANUAL TOOTHBRUSHES"
+  },
+  {
+    "SPMID": "D011500",
+    "ID": "D011502",
+    "Name": "ERASERS"
+  },
+  {
+    "SPMID": "D011500",
+    "ID": "D011503",
+    "Name": "PRESTIGE"
+  },
+  {
+    "SPMID": "D011500",
+    "ID": "D011504",
+    "Name": "ORAL CARE DENTURE"
+  },
+  {
+    "SPMID": "D011600",
+    "ID": "D011601",
+    "Name": "FINISHED PRODUCT"
+  },
+  {
+    "SPMID": "D011600",
+    "ID": "D011602",
+    "Name": "Historic ESS MGC"
+  },
+  {
+    "SPMID": "D011600",
+    "ID": "D011603",
+    "Name": "External Manufacturing"
+  },
+  {
+    "SPMID": "D011700",
+    "ID": "D011701",
+    "Name": "MANUFACTURING SERVICES"
+  },
+  {
+    "SPMID": "D011800",
+    "ID": "D011801",
+    "Name": "CONTRACT MANUFACTURING SERVICES"
+  },
+  {
+    "SPMID": "D011800",
+    "ID": "D011802",
+    "Name": "CM One Time Costs"
+  },
+  {
+    "SPMID": "D011800",
+    "ID": "D011803",
+    "Name": "PACKED FORMULA"
+  },
+  {
+    "SPMID": "D012000",
+    "ID": "D012001",
+    "Name": "PG Professional Equipment and Services"
+  },
+  {
+    "SPMID": "D030100",
+    "ID": "D030101",
+    "Name": "AD ACTIVES"
+  },
+  {
+    "SPMID": "D030100",
+    "ID": "D030102",
+    "Name": "AD EXCIPIENTS"
+  },
+  {
+    "SPMID": "D030100",
+    "ID": "DSPMMAP",
+    "Name": "SPM MAPPING"
+  },
+  {
+    "SPMID": "D030200",
+    "ID": "D030201",
+    "Name": "ALKALIS"
+  },
+  {
+    "SPMID": "D030300",
+    "ID": "D030301",
+    "Name": "STABILIZERS"
+  },
+  {
+    "SPMID": "D030400",
+    "ID": "D030401",
+    "Name": "PRESERVATIVES/BIOCIDES"
+  },
+  {
+    "SPMID": "D030500",
+    "ID": "D030501",
+    "Name": "BLEACH ACTIVATORS/BOOSTERS"
+  },
+  {
+    "SPMID": "D030500",
+    "ID": "D030502",
+    "Name": "BLEACHES"
+  },
+  {
+    "SPMID": "D030600",
+    "ID": "D030601",
+    "Name": "BRIGHTENERS"
+  },
+  {
+    "SPMID": "D030700",
+    "ID": "D030701",
+    "Name": "APDO ACTIVES"
+  },
+  {
+    "SPMID": "D030700",
+    "ID": "D030702",
+    "Name": "APDO FEEDSTOCKS"
+  },
+  {
+    "SPMID": "D030800",
+    "ID": "D030801",
+    "Name": "FILLERS"
+  },
+  {
+    "SPMID": "D030900",
+    "ID": "D030901",
+    "Name": "CELLULOSE"
+  },
+  {
+    "SPMID": "D030900",
+    "ID": "D030902",
+    "Name": "STARCH-BASED ENCAPSULATING MATLS"
+  },
+  {
+    "SPMID": "D030900",
+    "ID": "D030903",
+    "Name": "STARCHES"
+  },
+  {
+    "SPMID": "D031000",
+    "ID": "D031001",
+    "Name": "CHELANTS"
+  },
+  {
+    "SPMID": "D031100",
+    "ID": "D031101",
+    "Name": "CITRATES"
+  },
+  {
+    "SPMID": "D031100",
+    "ID": "D031102",
+    "Name": "CITRIC ACID"
+  },
+  {
+    "SPMID": "D031300",
+    "ID": "D031301",
+    "Name": "ACIDS"
+  },
+  {
+    "SPMID": "D031300",
+    "ID": "D031302",
+    "Name": "ELEMENTAL CHEMISTRY"
+  },
+  {
+    "SPMID": "D031300",
+    "ID": "D031303",
+    "Name": "SALTS"
+  },
+  {
+    "SPMID": "D031300",
+    "ID": "D031304",
+    "Name": "AMINO ACIDS"
+  },
+  {
+    "SPMID": "D031300",
+    "ID": "D031305",
+    "Name": "CLAYS"
+  },
+  {
+    "SPMID": "D031400",
+    "ID": "D031407",
+    "Name": "ENZYMES"
+  },
+  {
+    "SPMID": "D031500",
+    "ID": "D031501",
+    "Name": "FE ACTIVES"
+  },
+  {
+    "SPMID": "D031600",
+    "ID": "D031601",
+    "Name": "FATTY ACIDS"
+  },
+  {
+    "SPMID": "D031600",
+    "ID": "D031602",
+    "Name": "SOAP AND SOAP NOODLES"
+  },
+  {
+    "SPMID": "D031700",
+    "ID": "D031701",
+    "Name": "FORMATES"
+  },
+  {
+    "SPMID": "D031800",
+    "ID": "D031801",
+    "Name": "FLUORIDES/CHLORIDES"
+  },
+  {
+    "SPMID": "D031800",
+    "ID": "D031802",
+    "Name": "HEALTH CARE ACTIVES"
+  },
+  {
+    "SPMID": "D031800",
+    "ID": "D031803",
+    "Name": "HEALTH CARE EXCIPIENTS"
+  },
+  {
+    "SPMID": "D031900",
+    "ID": "D031901",
+    "Name": "MELAMINE FOAM"
+  },
+  {
+    "SPMID": "D032000",
+    "ID": "D032001",
+    "Name": "LOTIONS"
+  },
+  {
+    "SPMID": "D032000",
+    "ID": "D032002",
+    "Name": "MINERAL OILS"
+  },
+  {
+    "SPMID": "D032000",
+    "ID": "D032005",
+    "Name": "WAXES"
+  },
+  {
+    "SPMID": "D032000",
+    "ID": "D032006",
+    "Name": "PETROLATUMS"
+  },
+  {
+    "SPMID": "D032100",
+    "ID": "D032101",
+    "Name": "DYES/COLORANTS"
+  },
+  {
+    "SPMID": "D032100",
+    "ID": "D032102",
+    "Name": "INKS"
+  },
+  {
+    "SPMID": "D032100",
+    "ID": "D032103",
+    "Name": "MICAS/PEARLS/SPECKLES"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032201",
+    "Name": "ADHESIVES"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032202",
+    "Name": "CELLULOSIC POLYMERS"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032203",
+    "Name": "CONDITIONING POLYMERS"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032204",
+    "Name": "STYLING POLYMERS"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032205",
+    "Name": "WET STRENGTH RESINS"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032206",
+    "Name": "NON-ACRYLIC BASED POLYMERS"
+  },
+  {
+    "SPMID": "D032200",
+    "ID": "D032207",
+    "Name": "ACRYLIC ACID POLYMERS"
+  },
+  {
+    "SPMID": "D032300",
+    "ID": "D032301",
+    "Name": "PROPELLANTS"
+  },
+  {
+    "SPMID": "D032400",
+    "ID": "D032401",
+    "Name": "THICKENERS"
+  },
+  {
+    "SPMID": "D032500",
+    "ID": "D032501",
+    "Name": "SACCHARIN"
+  },
+  {
+    "SPMID": "D032600",
+    "ID": "D032601",
+    "Name": "SILICAS"
+  },
+  {
+    "SPMID": "D032600",
+    "ID": "D032602",
+    "Name": "SILICATES & DERIVATIVES"
+  },
+  {
+    "SPMID": "D032700",
+    "ID": "D032701",
+    "Name": "FUNCTIONALIZED SILICONE"
+  },
+  {
+    "SPMID": "D032700",
+    "ID": "D032702",
+    "Name": "NON-FUNCTIONALIZED SILICONE"
+  },
+  {
+    "SPMID": "D032800",
+    "ID": "D032801",
+    "Name": "EMOLIENT"
+  },
+  {
+    "SPMID": "D032800",
+    "ID": "D032802",
+    "Name": "EMULSIFYER"
+  },
+  {
+    "SPMID": "D032800",
+    "ID": "D032803",
+    "Name": "PEPTIDES"
+  },
+  {
+    "SPMID": "D032800",
+    "ID": "D032804",
+    "Name": "PITERA & PITERA FERMENTATION AIDS"
+  },
+  {
+    "SPMID": "D032900",
+    "ID": "D032901",
+    "Name": "SOLVENTS"
+  },
+  {
+    "SPMID": "D033000",
+    "ID": "D033001",
+    "Name": "SUPER ABSORBENTS"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033101",
+    "Name": "ALCOHOLS"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033102",
+    "Name": "TERTIARY AMINES"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033103",
+    "Name": "CATIONICS"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033104",
+    "Name": "ALCOHOL ETHOXYLATES"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033105",
+    "Name": "LAB"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033106",
+    "Name": "MILD SURFACTANTS"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033107",
+    "Name": "OTHER SURFACTANTS"
+  },
+  {
+    "SPMID": "D033100",
+    "ID": "D033109",
+    "Name": "SULFATE/SULFONATE"
+  },
+  {
+    "SPMID": "D033200",
+    "ID": "D033201",
+    "Name": "PHOSPHATES"
+  },
+  {
+    "SPMID": "D033300",
+    "ID": "D033301",
+    "Name": "PVA FILM"
+  },
+  {
+    "SPMID": "D033400",
+    "ID": "D033401",
+    "Name": "CHEMICALS MANUFACTURING"
+  },
+  {
+    "SPMID": "D033400",
+    "ID": "D033402",
+    "Name": "CHEMICALS INTERMEDIATES"
+  },
+  {
+    "SPMID": "D033400",
+    "ID": "D033403",
+    "Name": "BY PRODUCTS - IN PROCESS RECYCLED MATERIAL"
+  },
+  {
+    "SPMID": "D033400",
+    "ID": "D033404",
+    "Name": "FORMULAS"
+  },
+  {
+    "SPMID": "D033400",
+    "ID": "D033405",
+    "Name": "Chemicals One Time Costs"
+  },
+  {
+    "SPMID": "D033600",
+    "ID": "D033601",
+    "Name": "HISTORIC CHEMICAL MGC"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033701",
+    "Name": "FLAVOR"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033702",
+    "Name": "PERFUMES"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033703",
+    "Name": "FIBER"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033704",
+    "Name": "BOTANICALS/EXTRACTS"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033705",
+    "Name": "DELIVERY TECHNOLOGIES"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033706",
+    "Name": "NATURALS"
+  },
+  {
+    "SPMID": "D033700",
+    "ID": "D033707",
+    "Name": "AROMA CHEMICALS"
+  },
+  {
+    "SPMID": "D033800",
+    "ID": "D033801",
+    "Name": "FATS & OILS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033901",
+    "Name": "AMINO ACIDS-FOOD ADDITIVE"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033902",
+    "Name": "STARCHES"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033903",
+    "Name": "EDIBLE FIBERS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033904",
+    "Name": "SORBITOL"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033905",
+    "Name": "FATS & OILS - FEED GRADE OR BETTER"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033907",
+    "Name": "DEHYDRATED POTATO FLAKES"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033908",
+    "Name": "VEGETABLE PROTEIN"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033910",
+    "Name": "ANIMAL PROTEINS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033911",
+    "Name": "SUNSCREEN"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033912",
+    "Name": "VITAMINS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033913",
+    "Name": "SEASONINGS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033914",
+    "Name": "DAIRY PRODUCTS"
+  },
+  {
+    "SPMID": "D033900",
+    "ID": "D033915",
+    "Name": "SWEETENERS"
+  },
+  {
+    "SPMID": "D034000",
+    "ID": "D034001",
+    "Name": "PURCHASED CHEMICALS"
+  },
+  {
+    "SPMID": "D040100",
+    "ID": "D040101",
+    "Name": "CORDS COTTON"
+  },
+  {
+    "SPMID": "D040100",
+    "ID": "D040102",
+    "Name": "THREAD"
+  },
+  {
+    "SPMID": "D040200",
+    "ID": "D040201",
+    "Name": "ADHESIVES & SEALANTS"
+  },
+  {
+    "SPMID": "D040200",
+    "ID": "DSPMMAP",
+    "Name": "SPM MAPPING"
+  },
+  {
+    "SPMID": "D040300",
+    "ID": "D040301",
+    "Name": "AIRLAID"
+  },
+  {
+    "SPMID": "D040400",
+    "ID": "D040401",
+    "Name": "SPUNLACE"
+  },
+  {
+    "SPMID": "D040600",
+    "ID": "D040601",
+    "Name": "ELASTOMERS"
+  },
+  {
+    "SPMID": "D040700",
+    "ID": "D040701",
+    "Name": "HOOKS"
+  },
+  {
+    "SPMID": "D040700",
+    "ID": "D040702",
+    "Name": "LANDING ZONE"
+  },
+  {
+    "SPMID": "D040700",
+    "ID": "D040703",
+    "Name": "TAPES"
+  },
+  {
+    "SPMID": "D040800",
+    "ID": "D040801",
+    "Name": "BEL-TAPED"
+  },
+  {
+    "SPMID": "D040800",
+    "ID": "D040802",
+    "Name": "VFE-PULLON"
+  },
+  {
+    "SPMID": "D040800",
+    "ID": "D040803",
+    "Name": "WB-PULLON"
+  },
+  {
+    "SPMID": "D040800",
+    "ID": "D040804",
+    "Name": "BACK EAR"
+  },
+  {
+    "SPMID": "D040900",
+    "ID": "D040901",
+    "Name": "PACKAGING DISPLAYS"
+  },
+  {
+    "SPMID": "D041000",
+    "ID": "D041001",
+    "Name": "ACQUISITION LAYER (AQL)"
+  },
+  {
+    "SPMID": "D041000",
+    "ID": "D041002",
+    "Name": "NONWOVENS - CARDED MATERIAL"
+  },
+  {
+    "SPMID": "D041000",
+    "ID": "D041003",
+    "Name": "NONWOVENS - SPUNBOND"
+  },
+  {
+    "SPMID": "D041100",
+    "ID": "D041101",
+    "Name": "CORE-KRAFT PAPER"
+  },
+  {
+    "SPMID": "D041100",
+    "ID": "D041102",
+    "Name": "PULP - MODIFIED"
+  },
+  {
+    "SPMID": "D041100",
+    "ID": "D041103",
+    "Name": "PULP - RECYCLED"
+  },
+  {
+    "SPMID": "D041100",
+    "ID": "D041104",
+    "Name": "PULP - VIRGIN"
+  },
+  {
+    "SPMID": "D041100",
+    "ID": "D041105",
+    "Name": "PULP - FLUFF"
+  },
+  {
+    "SPMID": "D041200",
+    "ID": "D041201",
+    "Name": "DIAPER TISSUE"
+  },
+  {
+    "SPMID": "D041200",
+    "ID": "D041202",
+    "Name": "INTERMEDIATES"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041301",
+    "Name": "PKG - BLOW MOLDING"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041302",
+    "Name": "PKG - DELIVERY SYSTEMS-DISPENSING"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041303",
+    "Name": "PKG - GLASS & PRESTIGE COMPONENTS"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041304",
+    "Name": "PKG - IN-CASE FILL"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041305",
+    "Name": "PKG - INJECTION MOLDING"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041306",
+    "Name": "PKG - THERMOFORMING"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041307",
+    "Name": "PKG - DELIVERY SYSTEMS-CANS"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041308",
+    "Name": "PKG - DELIVERY SYSTEMS-TUBES"
+  },
+  {
+    "SPMID": "D041300",
+    "ID": "D041309",
+    "Name": "PKG - DELIVERY SYSTEMS-DRUMS"
+  },
+  {
+    "SPMID": "D041400",
+    "ID": "D041401",
+    "Name": "RESINS & MASTERBATCHES"
+  },
+  {
+    "SPMID": "D041500",
+    "ID": "D041501",
+    "Name": "PKG - CARTONS"
+  },
+  {
+    "SPMID": "D041500",
+    "ID": "D041502",
+    "Name": "PKG - CORRGUATED"
+  },
+  {
+    "SPMID": "D041500",
+    "ID": "D041503",
+    "Name": "PKG - LABELS"
+  },
+  {
+    "SPMID": "D041500",
+    "ID": "D041504",
+    "Name": "PKG - FLEXIBLE"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041601",
+    "Name": "FORMED FILMS-HYDRO (TS3)"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041602",
+    "Name": "FORMED FILMS-VACUUM (CPM)"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041603",
+    "Name": "FILMS - BS BREATHABLE"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041604",
+    "Name": "FILMS - NON-BREATHABLE"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041605",
+    "Name": "RPW"
+  },
+  {
+    "SPMID": "D041600",
+    "ID": "D041606",
+    "Name": "RELEASE PAPER"
+  },
+  {
+    "SPMID": "D041700",
+    "ID": "D041701",
+    "Name": "DUNNAGE"
+  },
+  {
+    "SPMID": "D041800",
+    "ID": "D041801",
+    "Name": "PACKAGING OTHER"
+  },
+  {
+    "SPMID": "D041800",
+    "ID": "D041803",
+    "Name": "PACKAGE INTERMEDIATES"
+  },
+  {
+    "SPMID": "D041800",
+    "ID": "D041804",
+    "Name": "Packaging One Time Costs"
+  }
+]

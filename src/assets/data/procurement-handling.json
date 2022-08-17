@@ -1,0 +1,70 @@
+[
+  {
+    "ID": "1",
+    "Name": "Standard Material P&G Sourced & Procured"
+  },
+  {
+    "ID": "2",
+    "Name": "Ext Mfg – P&G Sources & Procures (traditional)"
+  },
+  {
+    "ID": "3",
+    "Name": "Ext Mfg – P&G Sources & EM Procures (full service)"
+  },
+  {
+    "ID": "4",
+    "Name": "JVs"
+  },
+  {
+    "ID": "5",
+    "Name": "Non integrated business"
+  },
+  {
+    "ID": "6",
+    "Name": "PGC"
+  },
+  {
+    "ID": "7",
+    "Name": "FX Adjustment"
+  },
+  {
+    "ID": "8",
+    "Name": "Volume Adjustment"
+  },
+  {
+    "ID": "9",
+    "Name": "Energy"
+  },
+  {
+    "ID": "10",
+    "Name": "Diesel"
+  },
+  {
+    "ID": "11",
+    "Name": "Reshipper – Blow Molding"
+  },
+  {
+    "ID": "12",
+    "Name": "Reshipper – Injection Molding"
+  },
+  {
+    "ID": "13",
+    "Name": "Reshipper – Labels"
+  },
+  {
+    "ID": "14",
+    "Name": "Reshipper - Corrugated"
+  },
+  {
+    "ID": "15",
+    "Name": "Resin 2LB"
+  },
+  {
+    "ID": "16",
+    "Name": "Customization"
+  },
+  {
+    "ID": "17",
+    "Name": "CM Purchases Project (CM Purchases Use ONLY)"
+  }
+]

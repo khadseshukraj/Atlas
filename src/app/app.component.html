@@ -1,0 +1,143 @@
+<nav class="sidebar bg-blur-dark border-right border-dark" id="sidebar" style="left:-250px">
+  <div class="sidebar-sticky">
+    <ul class="nav flex-column px-4">
+      <li class="nav-item pt-3 pb-1" *ngxPermissionsExcept="['F&A']">
+        <a class="nav-link ion-icon-link d-flex" [routerLink]="['/my-desk']" (click)="toggleSidebar()" [ngClass]="{'active' : activeView === 'my-desk' }">
+          <ion-icon name="bar-chart"></ion-icon> My Desk 
+        </a>
+      </li>
+
+      <li class="nav-item py-1" *ngxPermissionsExcept="['F&A']">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="briefcase"></ion-icon> Strategies 
+        </a>
+      </li>
+      <li class="nav-item py-1" *ngxPermissionsExcept="['F&A']">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="business"></ion-icon> BARs 
+        </a>
+      </li>
+      <li class="nav-item py-1" *ngxPermissionsExcept="['F&A']">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="document-text"></ion-icon> Contracts 
+        </a>
+      </li>
+      <li class="nav-item py-1">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="alert-circle"></ion-icon> Risks
+        </a>
+      </li>
+
+      <li class="nav-item py-1" *ngxPermissionsOnly="['D_BUYER']">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="logo-usd"></ion-icon> Prices
+        </a>
+      </li>
+
+      <li class="nav-item py-1">
+        <a class="nav-link ion-icon-link d-flex" [routerLink]="['/savings']" (click)="toggleSidebar()" [ngClass]="{'active' : activeView === 'savings' }">
+          <ion-icon name="wallet"></ion-icon> Savings
+        </a>
+      </li>
+
+      <li class="nav-item py-1" *ngxPermissionsExcept="['I_BUYER']">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="file-tray-full"></ion-icon> Commodities
+        </a>
+      </li>
+
+      <li class="nav-item py-1">
+        <a class="nav-link ion-icon-link d-flex" href="#">
+          <ion-icon name="document-text"></ion-icon> Reports
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar sticky-top navbar-expand navbar-dark bg-blur-dark border-bottom border-dark">
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav pl-3">
+      <li class="nav-item">
+        <a class="nav-link ion-icon-link toggler collapsed" (click)="toggleSidebar()">
+          <ion-icon name="menu-outline" id="menu"></ion-icon>
+          <ion-icon name="close-outline" id="close"></ion-icon>
+        </a>
+      </li>
+    </ul>
+
+    <span class="navbar-brand px-3">
+      <img class="mr-3 mt-n1" src="../assets/img/pg_light.svg" height="32">
+      <span class="px-3 py-2 border-left border-secondary">iSourcing</span>
+    </span>
+  </div>
+
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav ml-auto px-3">
+      <li class="nav-item">
+        <a class="nav-link ion-icon-link d-flex flex-column" href="#">
+          <ion-icon name="notifications"></ion-icon>
+          <small class="position-absolute ml-3 mt-n2"><span class="badge badge-pill badge-danger">4</span></small>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <button class="btn btn-link px-3"
+        [popover]="profileTemplate"
+        placement="bottom"
+        [outsideClick]="true"
+        containerClass="shadow"
+        container="body">
+          <small>Name Last Name <ion-icon name="caret-down"></ion-icon></small>
+        </button>
+      </li>
+
+      <li class="nav-item border-left border-secondary px-2">
+        <a class="nav-link ion-icon-link" href="#">
+          <ion-icon name="help-circle"></ion-icon>
+        </a>
+      </li>
+
+      <form class="form-inline">
+        <div class="dropdown">
+          <button class="btn btn-secondary" type="button" 
+          [popover]="rolesTemplate"
+          placement="bottom"
+          [outsideClick]="true"
+          containerClass="shadow"
+          container="body"
+          #pop="bs-popover">
+            {{getCurrentRoleName()}}
+          </button>
+        </div>
+      </form>
+    </ul>
+  </div>
+</nav>
+
+<main class="container-fluid px-5">
+  <router-outlet></router-outlet>
+</main>
+
+<ng-template #profileTemplate>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div class="d-flex w-100 justify-content-start align-items-center">
+        <ion-icon name="person-circle-outline" class="text-secondary mr-3" style="font-size: 3rem;"></ion-icon>
+        <div>
+          <h6 class="mb-0">Name Last Name</h6>
+          <small class="text-secondary">user@email.com</small>
+        </div>
+      </div>
+    </li>
+    <a href="#" class="list-group-item list-group-item-action py-3">Sign Out</a>
+  </ul>
+</ng-template>
+
+<ng-template #rolesTemplate>
+  <div class="list-group list-group-flush" style="width: 250px;">
+    <a class="list-group-item list-group-item-action border-0" *ngFor="let role of roles" (click)="setRole(role.id);pop.hide()">
+      {{role.name}}
+    </a>
+  </div>
+</ng-template>

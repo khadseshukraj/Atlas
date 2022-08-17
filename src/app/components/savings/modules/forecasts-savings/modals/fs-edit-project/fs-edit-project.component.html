@@ -1,0 +1,461 @@
+<div class="modal-header bg-light fixed-top d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-light btn-ion-icon btn-circle" (click)="bsModalRef.hide()" [tooltip]="'Cancel'">
+        <ion-icon name="close"></ion-icon>
+        </button>
+        <h4 class="modal-title px-3">Edit Project</h4>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-3" (click)="goToPreviousStep()" *ngIf="hasPreviousStep" [tooltip]="'Back'">
+        <ion-icon name="arrow-back"></ion-icon>
+        </button>
+
+        <button type="button" class="btn btn-light btn-ion-icon btn-circle mx-3" [disabled]="!canContinue" (click)="goToNextStep()" [tooltip]="'Next'" *ngIf="!isLastStep">
+        <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-ion-icon btn-circle mx-3" [disabled]="!canSave" (click)="goToNextStep()" [tooltip]="'Save'">
+          <ion-icon name="save"></ion-icon>
+        </button>
+    </div>
+</div>
+
+<div class="modal-body pt-5">
+  <aw-wizard class="mt-5" [navBarLayout]="'large-filled-symbols'">
+    <aw-wizard-step stepTitle="Project Register" [navigationSymbol]="{ symbol: '1' }">
+      <div class="container pt-4">
+        <form [formGroup]="f1">
+          <div class="row py-2">
+            <div class="col-md-6 col-xs-12">
+              <label>Project Name</label>
+              <input class="form-control" formControlName="projectName" required maxlength="60">
+              <div *ngIf="c(f1).projectName.errors && !c(f1).projectName.pristine" class="d-inline">
+                <small *ngIf="c(f1).projectName.errors.required" class="text-danger">Project Name is required </small>
+                <small *ngIf="c(f1).projectName.errors.maxlength" class="text-danger">Project Name cannot be longer than 60 characters </small>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <label>Flex Field</label>
+              <input class="form-control" formControlName="flexField" maxlength="50">
+
+              <div *ngIf="c(f1).flexField.errors && !c(f1).flexField.pristine" class="d-inline">
+                <small *ngIf="c(f1).flexField.errors.maxlength" class="text-danger">Flex Field cannot be longer than 50 characters </small>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <label>Project Type</label>
+              <select class="form-control" formControlName="projectType" required>
+                <option value="REG">REG</option>
+                <option value="CAR">CAR</option>
+                <option value="FUT">FUT</option>
+              </select>
+
+              <div *ngIf="c(f1).projectType.errors && c(f1).projectType.touched" class="d-inline">
+                <small *ngIf="c(f1).projectType.errors.required" class="text-danger">Project Type is required </small>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row py-2">
+            
+            <div class="col-md-3 col-xs-12">
+              <label>Fiscal Year</label>
+              <select class="form-control" formControlName="fiscalYear" required>
+                <option value="2019_2020">19/20</option>
+              </select>
+
+              <div *ngIf="c(f1).fiscalYear.errors && c(f1).fiscalYear.touched" class="d-inline">
+                <small *ngIf="c(f1).fiscalYear.errors.required" class="text-danger">Fiscal Year is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Forecast Cycle</label>
+              <select class="form-control" formControlName="forecastCycle" required>
+                <option value="OCT_FIN_FCST">OCT FIN FCST</option>
+              </select>
+
+              <div *ngIf="c(f1).forecastCycle.errors && c(f1).forecastCycle.touched" class="d-inline">
+                <small *ngIf="c(f1).forecastCycle.errors.required" class="text-danger">Forecast Cycle is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Purchasing Group</label>
+              <select class="form-control" formControlName="purchasingGroup" required>
+                <option value="TS3">TS3 - Alejandro Perez</option>
+              </select>
+
+              <div *ngIf="c(f1).purchasingGroup.errors && c(f1).purchasingGroup.touched" class="d-inline">
+                <small *ngIf="c(f1).purchasingGroup.errors.required" class="text-danger">Purchasing Group is required </small>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 col-xs-12" *ngxPermissionsOnly="['D_BUYER']">
+              <div *ngIf="projectHasAdjustment" >
+                <label class="d-flex align-items-center"><ion-icon name="ellipse" class="text-warning mr-1"></ion-icon> This project has an adjustment</label>
+                <button class="btn btn-outline-primary d-flex align-items-center" (click)="openAdjustmentReviewModal()">
+                  <ion-icon name="eye" class="mr-1"></ion-icon> Review
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        
+          <div class="row py-2">
+            <div class="col-md-6 col-xs-12">
+              <label>Aditional Notes</label>
+              <textarea class="form-control" formControlName="aditionalNotes" rows="4" style="resize: none;" maxlength="180"></textarea>
+              <div *ngIf="c(f1).aditionalNotes.errors && !c(f1).aditionalNotes.pristine" class="d-inline">
+                <small *ngIf="c(f1).aditionalNotes.errors.maxlength" class="text-danger">Adional Notes cannot be longer than 180 characters </small>
+              </div>
+            </div>
+          </div>
+        
+          <hr>
+
+          <div class="row py-2">
+            <div class="col-12">
+              <label>Sub Region(s)</label>
+              <ng-select 
+                [items]="subRegions"
+                bindLabel="Name"
+                bindValue="ID"
+                [multiple]="true"
+                [searchable]="false"
+                [closeOnSelect]="false"
+                formControlName="subRegions">
+              </ng-select>
+
+              <div *ngIf="c(f1).subRegions.errors && c(f1).subRegions.touched" class="d-inline">
+                <small *ngIf="c(f1).subRegions.errors.required" class="text-danger">Sub Region(s) is required </small>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-2" *ngIf="c(f1).subRegions.value.length > 1">
+            <label>Sub Region Allocation(%)</label>
+
+            <div class="row py-2">
+              <div class="col-md-3 col-xs-12" *ngFor="let subRegion of c(f1).subRegions.value">
+                <label>{{getSubRegionNameForId(subRegion)}}</label>
+                <input class="form-control" placeholder="0" 
+                formControlName="subReg_{{subRegion}}" 
+                [pattern]="patterns.percentage" 
+                max="100" min="0" required>
+  
+                <div *ngIf="c(f1)['subReg_'+subRegion].errors && c(f1)['subReg_'+subRegion].touched" class="d-inline">
+                  <small *ngIf="c(f1)['subReg_'+subRegion].errors.required" class="text-danger">Allocation Percentage is required </small>
+                  <small *ngIf="c(f1)['subReg_'+subRegion].errors.pattern" class="text-danger">Allocation Percentage is not valid</small>
+                  <small *ngIf="c(f1)['subReg_'+subRegion].errors.isZero" class="text-danger">Allocation Percentage must be greater than 0</small>
+                </div>
+              </div>
+            </div>
+
+            <small *ngIf="sumOfSubRegionAllocationInvalid()" class="text-danger">Sum of all Sub Region allocations must be equal to 100%</small>
+
+            <hr>
+          </div>
+        
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12">
+              <label>Spend Pool High</label>
+              <select class="form-control" formControlName="spendPoolHigh" required>
+                <option></option>
+                <option *ngFor="let sph of spendPoolsHigh" [value]="sph.ID">{{sph.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).spendPoolHigh.errors && c(f1).spendPoolHigh.touched" class="d-inline">
+                <option></option>
+                <small *ngIf="c(f1).spendPoolHigh.errors.required" class="text-danger">Spend Pool High is required </small>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <label>Spend Pool Medium</label>
+              <select class="form-control" formControlName="spendPoolMedium" required>
+                <option></option>
+                <option *ngFor="let spm of spendPoolsMedium" [value]="spm.ID">{{spm.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).spendPoolMedium.errors && c(f1).spendPoolMedium.touched" class="d-inline">
+                <small *ngIf="c(f1).spendPoolMedium.errors.required" class="text-danger">Spend Pool Medium is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Spend Pool Low</label>
+              <select class="form-control" formControlName="spendPoolLow" required>
+                <option></option>
+                <option *ngFor="let spl of spendPoolsLow" [value]="spl.ID">{{spl.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).spendPoolLow.errors && c(f1).spendPoolLow.touched" class="d-inline">
+                <small *ngIf="c(f1).spendPoolLow.errors.required" class="text-danger">Spend Pool Low is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Project Classification</label>
+              <select class="form-control" formControlName="projectClassification" required>
+                <option></option>
+                <option *ngFor="let c of projectClassifications" [value]="c.ID">{{c.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).projectClassification.errors && c(f1).projectClassification.touched" class="d-inline">
+                <small *ngIf="c(f1).projectClassification.errors.required" class="text-danger">Project Classification is required </small>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12" *ngIf="c(f1).projectClassification.value === '4'">
+              <label>Commodity Classification</label>
+              <select class="form-control" formControlName="commodityClassification" required>
+                <option value="ACETONE">ACETONE</option>
+              </select>
+
+              <div *ngIf="c(f1).commodityClassification.errors && c(f1).commodityClassification.touched" class="d-inline">
+                <small *ngIf="c(f1).commodityClassification.errors.required" class="text-danger">Commodity Classification is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Probability</label>
+              <select class="form-control" formControlName="probability" required>
+                <option></option>
+                <option *ngFor="let p of probabilities" [value]="p.Value">{{p.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).probability.errors && c(f1).probability.touched" class="d-inline">
+                <small *ngIf="c(f1).probability.errors.required" class="text-danger">Probability is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>GCAS Change</label>
+              <select class="form-control" formControlName="gcasChange" required>
+                <option></option>
+                <option *ngFor="let g of gcas" [value]="g.ID">{{g.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).gcasChange.errors && c(f1).gcasChange.touched" class="d-inline">
+                <small *ngIf="c(f1).gcasChange.errors.required" class="text-danger">GCAS Change is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Procurement Handling</label>
+              <select class="form-control" formControlName="procurementHandling" required>
+                <option></option>
+                <option *ngFor="let p of procurementHandlings" [value]="p.ID">{{p.Name}}</option>
+              </select>
+
+              <div *ngIf="c(f1).procurementHandling.errors && c(f1).procurementHandling.touched" class="d-inline">
+                <small *ngIf="c(f1).procurementHandling.errors.required" class="text-danger">Procurement Handling is required </small>
+              </div>
+            </div>
+
+          </div>
+        
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12">
+              <label>Savings Classification</label>
+              <select class="form-control" formControlName="savingsClassification" required>
+                <option value="some">Some Classification</option>
+              </select>
+
+              <div *ngIf="c(f1).savingsClassification.errors && c(f1).savingsClassification.touched" class="d-inline">
+                <small *ngIf="c(f1).savingsClassification.errors.required" class="text-danger">Savings Classification is required </small>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <label>PPV or Non PPV</label>
+              <select class="form-control" formControlName="ppv" required>
+                <option value="ppv">PPV</option>
+                <option value="non-ppv">Non PPV</option>
+              </select>
+
+              <div *ngIf="c(f1).ppv.errors && c(f1).ppv.touched" class="d-inline">
+                <small *ngIf="c(f1).ppv.errors.required" class="text-danger">PPV or Non PPV value is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>NSS or Non NSS</label>
+              <select class="form-control" formControlName="nss" required>
+                <option value="nss">NSS</option>
+                <option value="non-nss">Non NSS</option>
+              </select>
+
+              <div *ngIf="c(f1).nss.errors && c(f1).nss.touched" class="d-inline">
+                <small *ngIf="c(f1).nss.errors.required" class="text-danger">NSS or Non NSS value is required </small>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12">
+              <label>Project Start Date</label>
+              <input class="form-control" formControlName="startDate" 
+                placement="top" 
+                [bsConfig]="datePickerConfig"
+                bsDatepicker required readonly>
+
+              <div *ngIf="c(f1).startDate.errors && c(f1).startDate.touched" class="d-inline">
+                <small *ngIf="c(f1).startDate.errors.required" class="text-danger">Project Start Date is required </small>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <label>Project End Date</label>
+              <input class="form-control" formControlName="endDate" 
+                placement="top" 
+                [bsConfig]="datePickerConfig"
+                bsDatepicker required readonly>
+
+              <div *ngIf="c(f1).endDate.errors && c(f1).endDate.touched" class="d-inline">
+                <small *ngIf="c(f1).endDate.errors.required" class="text-danger">Project End Date is required </small>
+              </div>
+            </div>
+
+          </div>
+        
+          <hr>
+        
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12">
+              <label>Project Value ($MM)</label>
+              <input class="form-control" formControlName="projectValue" placeholder="0.0" [pattern]="patterns.threeNumberThreeDecimalWithNegative" required>
+
+              <div *ngIf="c(f1).projectValue.errors && c(f1).projectValue.touched" class="d-inline">
+                <small *ngIf="c(f1).projectValue.errors.required" class="text-danger">Project Value is required </small>
+                <small *ngIf="c(f1).projectValue.errors.pattern" class="text-danger">Project Value is not valid</small>
+                <small *ngIf="c(f1).projectValue.errors.isZero" class="text-danger">Project Value cannot be 0</small>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <label>Help/Hurt</label>
+              <select class="form-control" formControlName="helpHurt" required>
+                <option value="Help">Help</option>
+                <option value="Hurt">Hurt</option>
+              </select>
+
+              <div *ngIf="c(f1).helpHurt.errors && c(f1).helpHurt.touched" class="d-inline">
+                <small *ngIf="c(f1).helpHurt.errors.required" class="text-danger">Help/Hurt value is required </small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row py-2">
+            <div class="col-md-3 col-xs-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" formControlName="techResourceRequired">
+                <label class="form-check-label">
+                  Technical Resource Required
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </aw-wizard-step>
+
+    <aw-wizard-step stepTitle="BU Allocation"  [navigationSymbol]="{ symbol: '2' }">
+      <div class="container pt-4">
+        <form [formGroup]="f2">
+          <div class="row py-2" *ngFor="let reg of c(f1).subRegions.value">
+            <h6>{{getSubRegionNameForId(reg)}}</h6>
+  
+            <table class="table table-borderless table-responsive">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Total</th>
+                  <td *ngFor="let bu of businessUnits[reg]">
+                    {{bu.Name}}
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Percentage (%)</th>
+                  <td>{{c(f1)['subReg_'+reg].value | number:'.0-2'}}</td>
+                  <td *ngFor="let bu of businessUnits[reg]">
+                    <input class="form-control" placeholder="0" 
+                      formControlName="subReg_{{reg}}_bu_{{bu.ID}}" 
+                      [pattern]="patterns.percentage" 
+                      max="100" min="0">
+
+                    <div *ngIf="c(f2)['subReg_'+reg+'_bu_'+bu.ID].errors && c(f2)['subReg_'+reg+'_bu_'+bu.ID].touched" class="d-inline">
+                      <small *ngIf="c(f2)['subReg_'+reg+'_bu_'+bu.ID].errors.pattern" class="text-danger">Allocation Percentage is not valid</small>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Dollar Value in Million ($)</th>
+                  <td>{{getValueInDollarMillionForSubRegion(reg) | number:'.0-2'}}</td>
+                  <td *ngFor="let bu of businessUnits[reg]" class="text-center">
+                    {{getValueInDollarMillionForBU(reg, bu.ID) | number:'.0-2'}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <small *ngIf="!sumOfBUAllocationsValid(reg)" class="text-danger">Total of BU allocations must be equal to 100%</small>
+            <hr>
+          </div>
+        </form>
+      </div>
+    </aw-wizard-step>
+
+    <aw-wizard-step stepTitle="Category Allocation" [navigationSymbol]="{ symbol: '3' }">
+      <form [formGroup]="f3">
+        <div class="container pt-4" *ngFor="let reg of c(f1).subRegions.value">
+          <h6>{{getSubRegionNameForId(reg)}}</h6>
+  
+          <div class="container" *ngFor="let bu of businessUnits[reg]">
+            <div class="row py-2" *ngIf="c(f2)['subReg_'+reg+'_bu_'+bu.ID].value && c(f2)['subReg_'+reg+'_bu_'+bu.ID].value != 0">
+              <table class="table table-borderless table-responsive">
+                <thead>
+                  <tr>
+                    <th>{{bu.Name}} - ${{getValueInDollarMillionForBU(reg, bu.ID) | number:'.0-2'}}MM</th>
+                    <td *ngFor="let cat of categories[reg][bu.ID]">
+                      {{cat.Name}}
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Percentage (%)</th>
+                    <td *ngFor="let cat of categories[reg][bu.ID]">
+                      <input class="form-control" placeholder="0" 
+                        formControlName="subReg_{{reg}}_bu_{{bu.ID}}_cat_{{cat.ID}}" 
+                        [pattern]="patterns.percentage" 
+                        max="100" min="0">
+
+                      <div *ngIf="c(f3)['subReg_'+reg+'_bu_'+bu.ID+'_cat_'+cat.ID].errors && c(f3)['subReg_'+reg+'_bu_'+bu.ID+'_cat_'+cat.ID].touched" class="d-inline">
+                        <small *ngIf="c(f3)['subReg_'+reg+'_bu_'+bu.ID+'_cat_'+cat.ID].errors.pattern" class="text-danger">Allocation Percentage is not valid</small>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Dollar Value in Million ($)</th>
+                    <td *ngFor="let cat of categories[reg][bu.ID]" class="text-center">
+                      {{getValueInDollarMillionForCategory(reg, bu.ID, cat.ID) | number:'.0-2'}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <small *ngIf="!sumOfCategoryAllocationsValid(reg, bu.ID)" class="text-danger">Total of Category allocations must be equal to 100%</small>
+            </div>
+          </div>
+  
+        </div>
+      </form>
+    </aw-wizard-step>
+  </aw-wizard>
+  
+</div>

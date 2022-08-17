@@ -1,0 +1,34 @@
+[
+  {
+    "ID": "1",
+    "Name": "North America"
+  },
+  {
+    "ID": "2",
+    "Name": "EUROPE FOCUS"
+  },
+  {
+    "ID": "3",
+    "Name": "EUROPE ENTERPRISE"
+  },
+  {
+    "ID": "4",
+    "Name": "IMEA: INDIA & MIDDLE EAST AFRICA AREA"
+  },
+  {
+    "ID": "5",
+    "Name": "ASIA PACIFIC ENTERPRISE"
+  },
+  {
+    "ID": "6",
+    "Name": "ASIA PACIFIC FOCUS"
+  },
+  {
+    "ID": "7",
+    "Name": "GREATER CHINA AREA"
+  },
+  {
+    "ID": "8",
+    "Name": "LATIN AMERICA AREA"
+  }
+]

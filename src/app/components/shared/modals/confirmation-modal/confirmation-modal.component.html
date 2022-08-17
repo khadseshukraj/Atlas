@@ -1,0 +1,16 @@
+<div class="modal-body text-center">
+  <p>
+    <ion-icon name="alert-circle" class="text-warning" size="large" *ngIf="confirmationType === 'default'"></ion-icon>
+    <ion-icon name="alert-circle" class="text-danger" size="large" *ngIf="confirmationType === 'danger' || confirmationType === 'error'"></ion-icon>
+  </p>
+
+  <p> {{message}} </p>
+</div>
+
+<div class="modal-footer d-flex align-items-center justify-content-center">
+  <button type="button" class="btn btn-light" (click)="close(false)">{{cancelTitle}}</button>
+  <button type="button" class="btn" [ngClass]="{
+    'btn-primary': confirmationType === 'default' || confirmationType === 'error',
+    'btn-danger': confirmationType === 'delete'
+  }" (click)="close(true)">{{okTitle}}</button>
+</div>

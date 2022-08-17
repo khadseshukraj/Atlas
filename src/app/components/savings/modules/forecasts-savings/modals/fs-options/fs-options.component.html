@@ -1,0 +1,23 @@
+<div class="modal-header bg-light d-flex justify-content-between">
+  <div class="d-flex align-items-center">
+    <button type="button" class="btn btn-light btn-ion-icon btn-circle" (click)="bsModalRef.hide()" tooltip="Close">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <h4 class="modal-title px-3">Options</h4>
+  </div>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <label>Spend Pool High</label>
+      <select class="form-control">
+        <option>CHEMICALS</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer d-flex align-items-center">
+  <button type="button" class="btn btn-primary" (click)="bsModalRef.hide()">Apply</button>
+</div>

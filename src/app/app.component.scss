@@ -1,0 +1,121 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+.container-fluid, .navbar {
+  min-width: 800px;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .btn-link {
+  color: rgba($color: #000, $alpha: 0.65) !important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .btn-link {
+  color: rgba($color: #fff, $alpha: 0.65) !important;
+}
+
+.navbar-nav {
+  .nav-item {
+    .ion-icon-link {
+      ion-icon {
+        font-size: 1.7rem;
+        line-height: 0.5rem;
+      }
+      
+      padding-bottom: 0;
+    }
+
+    .toggler {
+      ion-icon {
+        -webkit-transition: opacity 0.3s ease;
+        -o-transition: opacity 0.3s ease;
+        -moz-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+      }
+
+      #close{
+        margin-left: -27px;
+      }
+    }
+
+    .toggler:not(.collapsed) #menu {
+      opacity: 0;
+    }
+
+    .toggler.collapsed #close {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 58px;
+  bottom: 0;
+  padding: 0; /* Height of navbar */
+  width: 250px;
+  z-index: $zindex-fixed;
+
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 58px);
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  .nav-item {
+    .ion-icon-link {
+      ion-icon {
+        font-size: 1.3rem;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.sidebar.bg-blur-light,
+.sidebar.bg-light {
+  
+  .nav-link {
+    color: rgba($color: #000, $alpha: 0.65);
+  }
+
+  .nav-link:hover {
+    color: rgba($color: #000, $alpha: 0.85);
+  }
+
+  .nav-link.active {
+    color: #007bff;
+    font-weight: normal !important;
+  }
+
+}
+
+.sidebar.bg-blur-dark,
+.sidebar.bg-dark {
+  
+  .nav-link {
+    color: rgba($color: #fff, $alpha: 0.65);
+  }
+
+  .nav-link:hover {
+    color: rgba($color: #fff, $alpha: 0.85);
+  }
+
+  .nav-link.active {
+    color: white;
+    font-weight: normal !important;
+  }
+
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
